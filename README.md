@@ -3,5 +3,4 @@
 Practice
 
 - axios
-- fileHandle
 - window.showSaveFilePicker
