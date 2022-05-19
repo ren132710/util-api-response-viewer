@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="script.js" type="module"></script>
+    <title>js</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>API Response Viewer</h1>
+        <label for="api-call">API URL</label>
+        <input type="url" class="input-url" id="api-url" />
+        <div class="btn-array">
+          <button id="get" class="btn-get">GET</button>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <div id="res">
+        <div class="card card-body" id="status"></div>
+        <div class="card">
+          <div class="card-header">headers</div>
+          <div class="card-body">
+            <pre class="json" id="headers"></pre>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header card-header-data">
+            data
+            <button id="export" class="btn-export">save to file</button>
+          </div>
+          <div class="card-body">
+            <pre class="json" id="data"></pre>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">config</div>
+          <div class="card-body">
+            <pre class="json" id="config"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #3f3f48;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.header {
+  text-align: center;
+}
+
+label {
+  display: flex;
+}
+
+.input-url {
+  width: 100%;
+  min-height: 30px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.btn-array {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-get {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-get:hover {
+  background-color: #3896fb;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#status {
+  font-size: 1.3rem;
+  min-height: 3rem;
+  padding: 6px;
+}
+
+.card {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  min-height: auto;
+  max-height: 800px;
+  overflow: auto;
+}
+
+.json {
+  font-size: 0.85rem;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 6px;
+}
+
+.btn-export {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.btn-export:hover {
+  text-decoration-line: none;
+}
+
+/* order of @media selectors matters depending on using min/max */
+/* min = is greater than or equal to */
+/* max = is less than or equal to */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
