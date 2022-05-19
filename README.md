@@ -1,2 +1,7 @@
-# util-api-response-viewer
-API Response Viewer
+# API Response Viewer
+
+Practice
+
+- axios
+- fileHandle
+- window.showSaveFilePicker
